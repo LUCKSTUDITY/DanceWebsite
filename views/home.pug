@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content
+    section#introSection
+        div  Welcome to Abhinav's Dance Academy.
+        div.small  Eat Sleep Dance repeat 
+    section#missionSection 
+        h2  Our Mission 
+        div.card
+          h3 Dance Perfection 
+            div.card-box 
+                div.card-img    
+                    img(src="/static/img/d1.jpg")
+                div.card-content 
+                    p This is the best Dance Academy of Every Country.
+        div.card
+          h3 Dance as the way you like.
+           div.card-box 
+                div.card-img    
+                    img(src="/static/img/d2.jpg")
+                div.card-content 
+                    p This is the best Dance Academy of Every Country.
+        div.card
+          h3 Expert Teaching.
+           div.card-box 
+                div.card-img    
+                    img(src="/static/img/d3.jpg")
+                div.card-content 
+                    p This is the best Dance Academy of Every Country.
+    section#sponsorsSection
+        h2  Our Sponsors
+        div#sponsers  
+          img(src="/static/img/sponser1.png", alt="Apple Company Our Biggest Sponser" , class="spImage")
+          img(src="/static/img/sponser2.png", alt="Apple Company Our Biggest Sponser" , class="spImage")
+          img(src="/static/img/sponser3.png", alt="Apple Company Our Biggest Sponser" , class="spImage")
+          img(src="/static/img/sponser4.png", alt="Apple Company Our Biggest Sponser" , class="spImage")
